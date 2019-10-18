@@ -13,6 +13,9 @@
   "author": "Malo Widerspach <malo.dewiderspach@gmail.com>",
   "license": "MIT",
   "private": false,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2"
+  },
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",

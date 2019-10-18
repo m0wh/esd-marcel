@@ -4,10 +4,171 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Title</title>
+  <title>ESD — Marcel</title>
   <link rel="stylesheet" href="./src/style.scss">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-  <script src="./src/index.js"></script>
+  <section class="pre-header">
+    <div class="pre-header__links">
+      <button class="lang-choose"><i class="fas fa-globe-europe"></i><i class="fas fa-caret-down"></i></button>
+      <a href="tel:+33600000000"><i class="fas fa-phone"></i> Allo Marcel ?</a>
+    </div>
+    <div class="message">10% sur toutes les courses avec le code <strong>HAPPY10</strong></div>
+    <a href="#" class="espace-chauffeur"><i class="fas fa-car"></i> Espace chauffeur</a>
+  </section>
+
+  <header>
+    <section class="top-header">
+      <div class="logo">
+        <img src="./src/assets/logo.png" alt="Marcel Logo">
+      </div>
+
+      <div class="user-links">
+        <a href="#" class="login">Connexion</a>
+        <a href="#" class="register">Inscription</a>
+      </div>
+    </section>
+
+    <nav class="bottom-header">
+      <ul class="main-nav">
+        <li><a href="#">Qui est Marcel ?</a></li>
+        <li><a href="#">Nos services</a></li>
+        <li><a href="#">Offres entreprises</a></li>
+      </ul>
+
+      <ul class="social">
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="hero">Marcel, c'est votre plateforme de réservation de voitures avec chauffeurs privés en Ile-de-France.</h1>
+
+    <div class="content">
+      <form action="#" method="POST" class="booking">
+        <h2 class="booking__title">Réserver un trajet</h2>
+        <div class="form-group booking__when">
+          <div class="radio-element">
+            <input type="radio" name="when" id="when-now">
+            <label for="when-now">Dès que possible</label>
+          </div>
+
+          <div class="radio-element">
+            <input type="radio" name="when" id="when-later" checked>
+            <label for="when-later"><i class="fas fa-check"></i> Plus tard</label>
+          </div>
+        </div>
+
+        <div class="form-group booking__where">
+          <div class="address-input">
+            <div class="input">
+              <i class="fas fa-map-marker-alt"></i>
+              <input type="text" name="from" placeholder="Adresse de départ">
+            </div>
+
+            <div class="icons">
+              <i class="fas fa-subway"></i>
+              <i class="fas fa-plane"></i>
+              <i class="fas fa-location"></i>
+            </div>
+          </div>
+
+          <div class="address-input">
+            <button class="add-step"><i class="fas fa-plus"></i> Ajouter une étape dans la course</button>
+            <i class="fas fa-random"></i>
+          </div>
+
+          <div class="address-input">
+            <div class="input">
+              <i class="fas fa-flag"></i>
+              <input type="text" name="from" placeholder="Adresse d'arrivée">
+            </div>
+
+            <div class="icons">
+              <i class="fas fa-subway"></i>
+              <i class="fas fa-plane"></i>
+              <i class="fas fa-location"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group booking__panel">
+          <label for="panel">Pancarte</label>
+          <input type="checkbox" name="panel" id="panel">
+        </div>
+
+        <div class="form-group booking__datetime">
+          <div class="input">
+            <i class="far fa-calendar"></i>
+            <input type="date" name="date" id="date">
+          </div>
+
+          <div class="input">
+            <i class="far fa-clock"></i>
+            <input type="number" min="0" max="23" step="1" name="date" id="date">
+            <input type="number" min="0" max="49" step="1" name="date" id="date">
+          </div>
+        </div>
+
+        <div class="form-group booking__cartype">
+          <div class="radio-element">
+            <input type="radio" name="cartype" id="cartype-berline">
+            <label for="cartype-berline">Berline</label>
+
+            <div class="info">
+              <div class="persons"><i class="fas fa-user"></i> 4</div>
+              <div class="persons"><i class="fas fa-suitcase"></i> 2</div>
+            </div>
+          </div>
+
+          <div class="radio-element">
+            <input type="radio" name="cartype" id="cartype-luxe">
+            <label for="cartype-luxe">Luxe</label>
+
+            <div class="info">
+              <div class="persons"><i class="fas fa-user"></i> 4</div>
+              <div class="persons"><i class="fas fa-suitcase"></i> 2</div>
+            </div>
+          </div>
+
+          <div class="radio-element">
+            <input type="radio" name="cartype" id="cartype-green">
+            <label for="cartype-green">Green</label>
+
+            <div class="info">
+              <div class="persons"><i class="fas fa-user"></i> 4</div>
+              <div class="persons"><i class="fas fa-suitcase"></i> 2</div>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit">Obtenir un devis</button>
+      </form>
+
+      <section class="offers">
+        <section class="offer offer--blue">
+          <img class="background" src="./src/assets/happy-man.jpg" alt="Happy Man">
+          <div class="content">
+            <h3><span>Avec Marcel,</span> les pros vont gagner gros !</h3>
+            <a href=">">Découvrir l'offre Pro</a>
+          </div>
+        </section>
+
+        <section class="offer offer--purple">
+          <img class="background" src="./src/assets/happy-man.jpg" alt="Happy Man">
+          <div class="content">
+            <h3><span>Avec Marcel,</span> quand vous décolez les prix restent bas</h3>
+            <a href=">">Découvrir l'offre aéroports</a>
+          </div>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <!-- <script src="./src/index.js"></!-->
 </body>
 </html>
